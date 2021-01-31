@@ -40,13 +40,13 @@ function Post() {
                 </Form.Group>
 
                 <Form.Group as={Col}>
-                  <Form.Label>Profile Image</Form.Label>
+                  <Form.Label>Profile URL</Form.Label>
                   <Form.Control type="url" placeholder="Profile Url" id="profileimg" required />
                 </Form.Group>
               </Form.Row>
 
               <Form.Group controlId="formGridAddress1">
-                <Form.Label>Image Url</Form.Label>
+                <Form.Label>Image URL</Form.Label>
                 <Form.Control placeholder="Image Url" id="imgurl" required />
               </Form.Group>
 
