@@ -1,0 +1,17 @@
+parent component 
+
+child  component A
+child  component B
+child  component C
+
+
+waisa humra flow jo hota han data ka agar huma parent component ka data agar Child component C ma chahiye tu huma is kae liya phely a 
+b phir c ma data milta tha 
+
+mager ab context api kii through hum direct apnai parent ka data child C ma access kar sakty han
+
+So, React Hooks provides a concept call context
+
+
+React Context Api allows you to easily access data at different levels of the component tree,
+without passing prop to every level

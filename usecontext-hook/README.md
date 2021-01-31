@@ -69,3 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
+![Component Tree](Component_tree.png)
+
+three step of context api
+
+
+1. createContext() #simple first state create any data
+
+2. provider #you need a provider after you can easily accessible
+
+3. consumer   #then provider data access  then jisko chahiye usko consumer bana paray ga

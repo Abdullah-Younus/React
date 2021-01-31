@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Container, Col, Row } from "react-bootstrap";
 
 
 // function previewFile() {
@@ -39,6 +41,13 @@ function Post() {
   }
   return (
     <div>
+      <Container fluid>
+        <Row>
+          <Col>1 of 1</Col>
+        </Row>
+      </Container>
+
+
       <form onSubmit={add} style={{ margin: "10px" }}>
         <label>Name:</label>
         <input type="text" id="txtname" required />
@@ -51,7 +60,24 @@ function Post() {
         <br />
         <button>Post</button>
       </form>
+
+
+
+
+
+
+
+
+
+
       {console.log("data :", data)}
+
+
+
+
+
+
+
 
       {data.map((eachItem, i) => {
         return (
