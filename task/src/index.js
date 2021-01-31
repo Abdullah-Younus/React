@@ -2,35 +2,23 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Container, Col, Row } from "react-bootstrap";
+import { Button, Col, Form, Container } from "react-bootstrap";
 
 
-// function previewFile() {
-//   const preview = document.querySelector('img');
-//   const file = document.querySelector('input[type=file]').files[0];
-//   const reader = new FileReader();
-
-//   reader.addEventListener("load", function () {
-//     // convert image file to base64 string
-//     preview.src = reader.result;
-//   }, false);
-
-//   if (file) {
-//     reader.readAsDataURL(file);
-//   }
-// }
 function Post() {
   const [data, updateval] = useState([]);
   function add(event) {
     event.preventDefault();
 
     let name = document.getElementById('txtname').value;
+    let profileimg = document.getElementById('profileimg').value;
+    let imgUrl = document.getElementById('imgurl').value;
     let posttext = document.getElementById('posttext').value;
-    let imgUrl = document.getElementById('imgurl').src;
     let newData = {
       name: name,
+      profileimg: profileimg,
+      imgUrl: imgUrl,
       posttext: posttext,
-      imgUrl: imgUrl
     }
 
     updateval((previous) => {
@@ -41,28 +29,39 @@ function Post() {
   }
   return (
     <div>
-      <Container fluid>
-        <Row>
-          <Col>1 of 1</Col>
-        </Row>
+      <Container fluid="md">
+        <div className="row justify-content-md-center">
+          <div className="col-md-6 form">
+            <Form onSubmit={add} >
+              <Form.Row>
+                <Form.Group as={Col}>
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="name" placeholder="Enter Name" id="txtname" required />
+                </Form.Group>
+
+                <Form.Group as={Col}>
+                  <Form.Label>Profile Image</Form.Label>
+                  <Form.Control type="url" placeholder="Profile Url" id="profileimg" required />
+                </Form.Group>
+              </Form.Row>
+
+              <Form.Group controlId="formGridAddress1">
+                <Form.Label>Image Url</Form.Label>
+                <Form.Control placeholder="Image Url" id="imgurl" required />
+              </Form.Group>
+
+              <Form.Group controlId="formGridAddress2">
+                <Form.Label>Post Text</Form.Label>
+                <Form.Control placeholder="Write Post" id="posttext" required />
+              </Form.Group>
+
+              <Button variant="primary" type="submit">
+                Post
+            </Button>
+            </Form>
+          </div>
+        </div>
       </Container>
-
-
-      <form onSubmit={add} style={{ margin: "10px" }}>
-        <label>Name:</label>
-        <input type="text" id="txtname" required />
-        <br />
-        <label>Post:</label>
-        <textarea type="text" id="posttext" required placeholder="what is in your mind" />
-        <br />
-        <label>Image URl:</label>
-        <input type="url" id="imgurl" required />
-        <br />
-        <button>Post</button>
-      </form>
-
-
-
 
 
 
