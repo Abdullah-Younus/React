@@ -80,11 +80,32 @@ function Post() {
 
       {data.map((eachItem, i) => {
         return (
-          <div key={i} style={{ border: "1px solid black", margin: "5px", width: "80%" }}>
-
-            <h2>{eachItem.name}</h2>
-            <h6>{eachItem.posttext}</h6>
-            <img src={eachItem.imgUrl} alt="#" />
+          <div id="main-card">
+            <Container fluid="md">
+              <div className="row justify-content-md-center">
+                <div className="col-md-6 card">
+                  <div className="row">
+                    <div className="col-md-2">
+                      <img src={eachItem.profileimg} alt="profile pic" style={{ width: 40, height: 40 }} />
+                    </div>
+                    <div className="col-md-10">
+                      <p className="name">{eachItem.name}</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p className="mt-2 mb-2">{eachItem.posttext}</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <img src={eachItem.imgUrl}
+                        alt="{Post Image}" style={{ width: "100%" }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Container>
           </div>
         )
       })}

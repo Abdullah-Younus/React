@@ -14,3 +14,31 @@ code {
 .form{
   margin: 40px;
 }
+.card{
+  background-color:white;
+  border: 1px solid #d0d1d5;
+  border-radius:3px;
+  margin-bottom:10px;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .30); /* Not original, just a test */
+}
+.name{
+  margin-left: -45px !important;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#main-card{
+  display: flex;
+  flex-direction: column-reverse;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  margin: 0 !important;
+  padding: 0 !important;
+  
+}
