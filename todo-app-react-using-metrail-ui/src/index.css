@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.card {
+  background: #bbb;
+  padding: 1em 1.2em;
+  width: 50%;
+  margin: 0 auto;
+  color:black;
+  font: 150%/1.2 Georgia, Palatino, Times, serif;
+  position: relative;
+  top:20px
+}
+
+.card {
+  background: black;
+ 
+  box-shadow:  0 01px gray,
+               01px 0 gray,
+               01px 02px gray,
+               02px 01px gray,
+               02px 03px gray,
+               03px 02px gray,
+               03px 04px gray,
+               04px 03px gray,
+               04px 05px gray,
+               05px 04px gray,
+               05px 06px gray,
+               06px 05px gray;
+}
+
+
+.check{
+  border: 1px solid black;
+}
+
+.cardss{
+  width: 50%;
+  height: 150px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: blanchedalmond;
+  font: 120%/1.2 Georgia, Palatino, Times, serif;
+  overflow-wrap: break-word;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  text-transform: capitalize;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  margin-top: 50px;
+
+}
