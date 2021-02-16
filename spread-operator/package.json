@@ -1,28 +1,21 @@
 {
-  "name": "todo-app-react-using-metrail-ui",
+  "name": "spread-operator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://007Abdullah.github.io/React-Todo",
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.6.3",
-    "bootstrap": "^4.6.0",
-    "gh-pages": "^3.1.0",
+    "@testing-library/user-event": "^12.7.1",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "4.0.2",
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
