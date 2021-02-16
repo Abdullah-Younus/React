@@ -24,6 +24,15 @@ export default function Rest() {
     // is nai ek array bana deya iska
 
 
+    function fun(a, b, ...c) {
+        console.log(`A => ${a} : B => ${b} `);
+        console.log(c);
+        console.log(c[0]);
+        console.log(c.length);
+        console.log(c.indexOf('Eden'));
+    }
+
+    fun("Abdullah", "Sameer", "Younus", "Khan", "Shazaib", "Ali", "Eden");
     return (
         <>
         </>
